@@ -1,6 +1,13 @@
-
 @import "vendors/bootstrap";
 
 @import "utils/variables";
 
+@import "base/typography";
+
+@import "components/navbar";
+
+@import "layout/header";
+@import "layout/section";
+@import "layout/about-us";
+@import "layout/facts";
 

@@ -1,12 +1,17 @@
-
-$primary:#F38181;
-$secondary:#95E1D3;
-$success:#FCE38A;
-
-
+$primary: #f38181;
+$secondary: #95e1d3;
+$success: #fce38a;
+$gray-200: #999999;
+$gray-800: #333333;
+$white: #fff;
+$light: $white;
 
 $enable-rounded: false;
 
 $container-max-widths: (
-  xl: 1220px
-)
+  xl: 1220px,
+);
+
+$display1-size: #{"min(16vmin,150px)"};
+$display1-weight: 700;
+$display3-size: #{"min(10vmin,70px)"};

@@ -1,0 +1,29 @@
+.header {
+  background-image: $gradient, url(../img/header-bcg.jpeg);
+  background-size: cover;
+  background-position: center, center;
+  background-repeat: no-repeat;
+  color: $white;
+  height: 100vh;
+
+  .hero {
+    height: 80%;
+    padding: 5vmax 10vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    h1 {
+      position: relative;
+      margin-bottom: 0.7em;
+    }
+    .outline-btn {
+      border-width: $border-width;
+      font-size: 0.8rem;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}

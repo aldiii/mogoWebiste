@@ -1,0 +1,29 @@
+.main-nav {
+  &,
+  &-collapse {
+    align-items: center;
+  }
+  & &-link.nav-link {
+    position: relative;
+    color: $white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 2em;
+    transition: 0.2s;
+
+    &.active::after {
+      content: "";
+      position: absolute;
+      left: 5%;
+      bottom: 5%;
+      width: 90%;
+      height: $border-width;
+      background-color: $success;
+    }
+    &.active,
+    &:hover {
+      color: $success;
+    }
+  }
+}

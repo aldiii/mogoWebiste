@@ -10,16 +10,143 @@
 
     <!-- Bootstrap CSS -->
     <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,400;1,300&display=swap"
       rel="stylesheet"
-      href="./css/main.css"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="./css/main.css" />
 
     <title>Mogo Webiste</title>
   </head>
   <body>
-    header.container-fluid.header.max-width
+    <header class="container-fluid header max-with">
+      <nav
+        class="main-nav navbar navbar-expand-md navbar-dark bg-transparent container"
+      >
+        <a class="navbar-brand" href="#"
+          ><img src="./img/mogo.svg" alt="Mogo logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="main-nav-collapse collapse navbar-collapse"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link active main-nav-link" href="#"
+              >About <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-item nav-link main-nav-link" href="#">Service</a>
+            <a class="nav-item nav-link main-nav-link" href="#">Work</a>
+            <a class="nav-item nav-link main-nav-link" href="#">Blog</a>
+            <a class="nav-item nav-link main-nav-link" href="#">Contact</a>
+            <a class="nav-item nav-link" href="#"
+              ><img src="img/shopping-cart.svg" alt="shopping cart"
+            /></a>
+            <a class="nav-item nav-link" href="#"
+              ><img src="./img/search-icon.svg" alt="search"
+            /></a>
+          </div>
+        </div>
+      </nav>
+      <div class="hero container text-center">
+        <p class="decorative display-3">Creative Template</p>
+        <h1 class="display-1 text-uppercase">Welcome to MoGo</h1>
+        <button
+          class="btn btn-outline-light text-uppercase font-weight-bold outline-btn"
+        >
+          Learn more
+        </button>
+      </div>
+    </header>
+    <section class="about-us">
+      <div class="container about-us-container">
+        <p class="decorative">What we do</p>
+        <h2 class="section-header">Story about us</h2>
+        <p class="section-p about-us-p">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <div class="row about-us-galery">
+          <div class="col about-us-col">
+            <div class="card text-white about-us-card">
+              <img
+                src="./img/about-us-1.png"
+                alt=""
+                class="card-img about-us-img img-fluid"
+              />
+              <div class="about-us-overlay card-img-overlay">
+                <embed type="image/svg+xml" src="./img/team-icon.svg" />
+                <p class="overlay-text text-uppercase">super team</p>
+              </div>
+            </div>
+          </div>
+          <div class="col about-us-col">
+            <div class="card text-white about-us-card">
+              <img
+                src="./img/about-us-2.png"
+                alt=""
+                class="card-img about-us-img img-fluid"
+              />
+              <div class="about-us-overlay card-img-overlay">
+                <embed type="image/svg+xml" src="./img/team-icon.svg" />
+                <p class="overlay-text text-uppercase">super team</p>
+              </div>
+            </div>
+          </div>
+          <div class="col about-us-col">
+            <div class="card text-white about-us-card">
+              <img
+                src="./img/about-us-3.png"
+                alt=""
+                class="card-img about-us-img img-fluid"
+              />
+              <div class="about-us-overlay card-img-overlay">
+                <embed type="image/svg+xml" src="./img/team-icon.svg" />
+                <p class="overlay-text text-uppercase">super team</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <aside class="facts">
+      <div class="container facts-container">
+        <div class="row no-gutters">
+          <div class="col facts-col">
+            <p class="display-3 facts-number">42</p>
+            <p class="facts-description">Web Design Projects</p>
+          </div>
+          <div class="col facts-col">
+            <p class="display-3 facts-number">123</p>
+            <p class="facts-description">happy client</p>
+          </div>
+          <div class="col facts-col">
+            <p class="display-3 facts-number">15</p>
+            <p class="facts-description">award winner</p>
+          </div>
+          <div class="col facts-col">
+            <p class="display-3 facts-number">99</p>
+            <p class="facts-description">cup of coffee</p>
+          </div>
+          <div class="col facts-col">
+            <p class="display-3 facts-number">24</p>
+            <p class="facts-description">members</p>
+          </div>
+        </div>
+      </div>
+    </aside>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

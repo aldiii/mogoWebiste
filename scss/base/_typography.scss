@@ -1,0 +1,42 @@
+h1,
+h2,
+h3,
+h4,
+a {
+  font-family: $main-font;
+  color: dark;
+}
+
+.decorative {
+  font-family: $decorative-font;
+}
+
+p {
+  font-family: $secondary-font;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: calc(50% - 30px);
+  bottom: -0.25em;
+  width: 60px;
+  height: $border-width;
+  background-color: $white;
+}
+
+.section-header {
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom:90px;
+}
+
+section .decorative {
+  font-size: 1.5rem;
+}
+
+.section-p {
+  color: $gray-200;
+}
