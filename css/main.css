@@ -7105,3 +7105,22 @@ section {
       .facts-col:not(:last-child) {
         padding: 4vmax 20px;
         border-right: solid 2px rgba(255, 255, 255, 0.3); } }
+
+.design {
+  background-image: url(../img/design-bg.png), linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85));
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-bottom: 0; }
+  .design-images {
+    position: relative; }
+  .design-img-big {
+    position: relative;
+    max-width: 70%; }
+  .design-img-sm {
+    max-width: 40%;
+    position: absolute;
+    left: 50%;
+    bottom: -15%;
+    transform: translateX(40%); }

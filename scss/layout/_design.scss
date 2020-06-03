@@ -1,0 +1,25 @@
+.design {
+  background-image: url(../img/design-bg.png),
+    linear-gradient(rgba($white, 0.85), rgba($white, 0.85));
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-bottom: 0;
+
+  &-images {
+    position: relative;
+  }
+  &-img-big {
+    position: relative;
+    max-width: 70%;
+  }
+
+  &-img-sm {
+    max-width: 40%;
+    position: absolute;
+    left: 50%;
+    bottom: -15%;
+    transform: translateX(40%);
+  }
+}
