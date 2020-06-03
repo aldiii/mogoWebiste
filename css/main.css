@@ -6943,35 +6943,46 @@ h3,
 h4,
 a {
   font-family: "Montserrat", sans-serif;
-  color: dark; }
+  color: #333333; }
 
 .decorative {
   font-family: "Kaushan Script", cursive; }
 
 p {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  color: #999999;
+  font-size: .94rem; }
 
-h1::after {
+h3 {
+  font-size: .875rem; }
+
+h1::after,
+.section-header::after {
   content: "";
   display: block;
   position: absolute;
   left: calc(50% - 30px);
-  bottom: -0.25em;
   width: 60px;
   height: 3px;
   background-color: #fff; }
+
+h1::after {
+  bottom: -0.25em; }
+
+.section-header::after {
+  background-color: #f38181;
+  bottom: -1em; }
 
 .section-header {
   font-size: 1.875rem;
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 90px; }
+  margin-bottom: 90px;
+  position: relative; }
 
 section .decorative {
-  font-size: 1.5rem; }
-
-.section-p {
-  color: #999999; }
+  font-size: 1.5rem;
+  color: #333333; }
 
 .main-nav, .main-nav-collapse {
   align-items: center; }
@@ -6984,16 +6995,24 @@ section .decorative {
   text-transform: uppercase;
   margin-left: 2em;
   transition: 0.2s; }
-  .main-nav .main-nav-link.nav-link.active::after {
-    content: "";
-    position: absolute;
-    left: 5%;
-    bottom: 5%;
-    width: 90%;
-    height: 3px;
-    background-color: #fce38a; }
+  @media (min-width: 768px) {
+    .main-nav .main-nav-link.nav-link.active::after {
+      content: "";
+      position: absolute;
+      left: 5%;
+      bottom: 5%;
+      width: 90%;
+      height: 3px;
+      background-color: #fce38a; } }
   .main-nav .main-nav-link.nav-link.active, .main-nav .main-nav-link.nav-link:hover {
     color: #fce38a; }
+
+.navbar-nav {
+  align-items: center; }
+
+.divider {
+  background-color: #e5e5e5;
+  height: 2px; }
 
 .header {
   background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(../img/header-bcg.jpeg);
@@ -7011,12 +7030,15 @@ section .decorative {
     align-items: center; }
     .header .hero h1 {
       position: relative;
-      margin-bottom: 0.7em; }
+      margin-bottom: 0.7em;
+      color: #fff; }
     .header .hero .outline-btn {
       border-width: 3px;
       font-size: 0.8rem; }
       .header .hero .outline-btn:hover {
         color: #f38181; }
+    .header .hero p.decorative {
+      color: #fff; }
 
 section {
   padding-top: 100px;
@@ -7041,6 +7063,9 @@ section {
 .about-us-card:hover {
   transform: translate(-10px, -10px); }
 
+.about-us-col {
+  margin-bottom: 20px; }
+
 .about-us-card:hover .about-us-overlay {
   display: flex; }
 
@@ -7058,15 +7083,25 @@ section {
   .facts-description {
     font-family: Montserrat;
     text-transform: uppercase;
-    font-size: .8rem; }
+    font-size: 0.8rem;
+    line-height: 150%;
+    height: 2.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; }
   .facts-number {
-    font-weight: bold; }
+    font-weight: bold;
+    line-height: 130%;
+    margin-bottom: 0; }
   .facts-col {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding: 2vh 20px;
+    max-height: 270px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: center;
     justify-content: center; }
-    .facts-col:not(:last-child) {
-      border-right: solid 2px rgba(255, 255, 255, 0.3); }
+    @media (min-width: 576px) {
+      .facts-col:not(:last-child) {
+        padding: 4vmax 20px;
+        border-right: solid 2px rgba(255, 255, 255, 0.3); } }

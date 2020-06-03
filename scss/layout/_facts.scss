@@ -1,30 +1,42 @@
 .facts {
   background-color: $secondary;
 
-  & p{
-    color:$white;
-    text-align:center;
+  & p {
+    color: $white;
+    text-align: center;
   }
 
-  &-description{
-      font-family:Montserrat;
-      text-transform:uppercase;
-      font-size:.8rem;
+  &-description {
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    line-height: 150%;
+    height: 2.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
   }
 
-  &-number{
-      font-weight:bold;
+  &-number {
+    font-weight: bold;
+    line-height: 130%;
+    margin-bottom: 0;
   }
 
-  &-col{
-      padding-top:90px;
-       padding-bottom:90px;
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      justify-content:center;
-      &:not(:last-child){
-      border-right: solid 2px rgba($white, .3);
+  &-col {
+    padding: 2vh 20px;
+    max-height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    @include media-breakpoint-up(sm) {
+      &:not(:last-child) {
+        padding: 4vmax 20px;
+        border-right: solid 2px rgba($white, 0.3);
       }
+    }
   }
 }

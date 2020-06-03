@@ -11,19 +11,24 @@
     text-transform: uppercase;
     margin-left: 2em;
     transition: 0.2s;
-
-    &.active::after {
-      content: "";
-      position: absolute;
-      left: 5%;
-      bottom: 5%;
-      width: 90%;
-      height: $border-width;
-      background-color: $success;
+    @include media-breakpoint-up(md) {
+      &.active::after {
+        content: "";
+        position: absolute;
+        left: 5%;
+        bottom: 5%;
+        width: 90%;
+        height: $border-width;
+        background-color: $success;
+      }
     }
     &.active,
     &:hover {
       color: $success;
     }
   }
+}
+
+.navbar-nav {
+  align-items: center;
 }

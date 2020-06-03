@@ -4,7 +4,7 @@ h3,
 h4,
 a {
   font-family: $main-font;
-  color: dark;
+  color: $dark;
 }
 
 .decorative {
@@ -13,30 +13,42 @@ a {
 
 p {
   font-family: $secondary-font;
+  color: $gray-200;
+  font-size:.94rem;
 }
 
-h1::after {
+h3{
+  font-size:.875rem;
+}
+
+h1::after,
+.section-header::after {
   content: "";
   display: block;
   position: absolute;
   left: calc(50% - 30px);
-  bottom: -0.25em;
   width: 60px;
   height: $border-width;
   background-color: $white;
+}
+h1::after {
+  bottom: -0.25em;
+}
+.section-header::after {
+  background-color: $primary;
+  bottom: -1em;
 }
 
 .section-header {
   font-size: 1.875rem;
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom:90px;
+  margin-bottom: 90px;
+  position: relative;
 }
 
 section .decorative {
   font-size: 1.5rem;
+  color:$dark;
 }
 
-.section-p {
-  color: $gray-200;
-}
