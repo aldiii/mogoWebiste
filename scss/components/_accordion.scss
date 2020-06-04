@@ -1,0 +1,39 @@
+.accordion {
+  &-p {
+    font-style: italic;
+    font-weight: 300;
+    text-align: left;
+  }
+  &-card-header {
+    padding: 0.25rem 1rem;
+  }
+
+  &-btn {
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+
+    &::after {
+      content: "";
+      display: block;
+      margin-left: auto;
+      background-image: url("../img/arrow-up.svg");
+      background-size: 23px 13px;
+      width: 23px;
+      height: 13px;
+      transition: 0.2s;
+    }
+    &.collapsed::after {
+      transform: rotateX(180deg);
+    }
+  }
+
+  &-icon {
+    padding-right: 0.75rem;
+  }
+
+  &-card-body {
+    max-height: 180px;
+    overflow-y: scroll;
+  }
+}

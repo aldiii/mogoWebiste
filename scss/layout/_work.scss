@@ -1,0 +1,12 @@
+.work {
+  &-col {
+    padding-bottom: 20px;
+  }
+  &-col-img {
+    background-image: url(../img/work-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    min-height: 300px;
+  }
+}
