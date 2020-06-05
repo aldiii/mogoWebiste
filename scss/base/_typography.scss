@@ -22,21 +22,30 @@ h3{
 }
 
 h1::after,
-.section-header::after {
+.section-header::after,
+.slide-footer::after {
   content: "";
   display: block;
   position: absolute;
   left: calc(50% - 30px);
   width: 60px;
   height: $border-width;
-  background-color: $white;
+  background-color: $primary;
 }
 h1::after {
+  background-color:$white;
   bottom: -0.25em;
 }
 .section-header::after {
-  background-color: $primary;
   bottom: -1em;
+}
+.slide-footer::after{
+  display:none;
+   @include media-breakpoint-up(sm) {
+     display:block;
+left:0;
+top: calc(50% - 1px);
+   }
 }
 
 .section-header {
@@ -47,7 +56,7 @@ h1::after {
   position: relative;
 }
 
-section .decorative {
+section .decorative, .slide-footer .decorative {
   font-size: 1.5rem;
   color:$dark;
 }

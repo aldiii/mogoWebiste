@@ -1,0 +1,23 @@
+.quotes{
+    background-color:$gray-300;
+    padding: 70px 0;
+&-carousel-control{
+width:10%;
+
+}
+&-carousel-inner.carousel-inner{
+    width:80%;
+}
+
+     &-carousel-next-icon.carousel-control-next-icon{
+         background-image: url("../img/arrow-r.svg");
+         width:13px;
+         height:23px;
+     }
+
+     &-carousel-prev-icon.carousel-control-prev-icon{
+         background-image: url("../img/arrow-l.svg");
+         width:13px;
+         height:23px;
+     }
+}

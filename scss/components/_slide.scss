@@ -1,0 +1,43 @@
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction:column;
+  @include media-breakpoint-up(sm) { 
+    flex-direction:row;
+   }
+  
+
+  &-icon{
+      padding:#{"min(5vmin,60px)"};
+      border:2px solid $secondary;
+      
+      &.img{
+        width:64px;
+        height:62px;
+      }
+  }
+
+  &-quote{
+    padding-top:20px;
+    text-align:center;
+    @include media-breakpoint-up(sm) { 
+    text-align:left;
+    margin-left:auto;
+    padding-left:2em;
+    padding-top:0;
+    }
+  }
+  &-p{
+    font-size:#{"min(7vmin,1.5rem)"};
+    font-style:italic;
+    
+  }
+
+  &-footer{
+    position:relative;
+     @include media-breakpoint-up(sm) {
+    padding-left:65px;
+     }
+  }
+}
