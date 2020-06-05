@@ -1,0 +1,72 @@
+.section-card {
+  transition: 0.3s;
+  margin-bottom: 20px;
+
+  &-shadow:hover {
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px $secondary;
+  }
+
+  &:hover &-overlay {
+    display: flex;
+  }
+  &-overlay {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: $gradient;
+
+    display: none;
+    transition: 0.2s;
+  }
+
+  &-btn {
+    width: 57px;
+    height: 57px;
+    background-size: 30px 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    &.btn:not(:last-child) {
+      border-right: solid 2px $primary;
+    }
+
+    &.btn:hover {
+      background-color: $primary;
+    }
+
+    &-fb {
+      background-image: url("../img/facebook.svg");
+
+      &:hover {
+        background-image: url("../img/facebook-white.svg");
+      }
+    }
+    &-tw {
+      background-image: url("../img/twitter.svg");
+      &:hover {
+        background-image: url("../img/twitter-white.svg");
+      }
+    }
+    &-pin {
+      background-image: url("../img/pinterest.svg");
+      &:hover {
+        background-image: url("../img/pinterest-white.svg");
+      }
+    }
+    &-ig {
+      background-image: url("../img/instagram.svg");
+      &:hover {
+        background-image: url("../img/instagram-white.svg");
+      }
+    }
+  }
+}
+
+.overlay-text {
+  font-family: $main-font;
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding-top: 11px;
+  color: $white;
+}
