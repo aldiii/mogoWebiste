@@ -7278,10 +7278,51 @@ section {
   background-repeat: no-repeat;
   background-position: top center; }
   .client-col {
-    margin-bottom: 5vh; }
+    margin-bottom: 5vmin; }
   .client-text {
     text-align: left;
     padding-left: 25px; }
   .client-role {
     position: relative;
     margin-bottom: 2rem; }
+
+.blog-card {
+  text-align: left;
+  border: none;
+  margin-bottom: 30px; }
+
+.blog-img {
+  position: relative;
+  margin-left: 15px; }
+
+.blog-date {
+  position: absolute;
+  left: -15px;
+  bottom: 15px;
+  width: 60px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column; }
+
+.blog-day {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0;
+  line-height: 120%; }
+
+.blog-month {
+  color: #fff;
+  margin-bottom: 0;
+  line-height: 120%; }
+
+.blog-footer {
+  display: flex;
+  align-items: center; }
+  .blog-footer-text {
+    padding-left: 6px;
+    padding-right: 10px;
+    font-size: 0.9375rem; }

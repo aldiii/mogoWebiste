@@ -1,0 +1,46 @@
+.blog {
+  &-card {
+    text-align: left;
+    border: none;
+    margin-bottom: 30px;
+  }
+  &-img {
+    position: relative;
+    margin-left: 15px;
+  }
+  &-date {
+    position: absolute;
+    left: -15px;
+    bottom: 15px;
+    width: 60px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+  }
+  &-day {
+    color: $white;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: $main-font;
+    margin-bottom: 0;
+    line-height: 120%;
+  }
+  &-month {
+    color: $white;
+    margin-bottom: 0;
+    line-height: 120%;
+  }
+
+  &-footer {
+    display: flex;
+    align-items: center;
+
+    &-text {
+      padding-left: 6px;
+      padding-right: 10px;
+      font-size: 0.9375rem;
+    }
+  }
+}
