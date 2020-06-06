@@ -7089,7 +7089,8 @@ section .decorative, .slide-footer .decorative {
 
 .section-card {
   transition: 0.3s;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  border: none; }
   .section-card-shadow:hover {
     transform: translate(-10px, -10px);
     box-shadow: 10px 10px #95e1d3; }
@@ -7251,3 +7252,15 @@ section {
 .logos {
   background-color: #f5f5f5;
   padding: 70px 0; }
+
+.portfolio-card-columns {
+  column-count: 1; }
+  @media (min-width: 576px) {
+    .portfolio-card-columns {
+      column-count: 2;
+      column-gap: 0; }
+      .portfolio-card-columns .section-card.card {
+        margin-bottom: 0; } }
+  @media (min-width: 768px) {
+    .portfolio-card-columns {
+      column-count: 4; } }

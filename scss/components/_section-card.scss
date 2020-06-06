@@ -1,6 +1,7 @@
 .section-card {
   transition: 0.3s;
   margin-bottom: 20px;
+  border:none;
 
   &-shadow:hover {
     transform: translate(-10px, -10px);
