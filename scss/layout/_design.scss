@@ -1,6 +1,5 @@
 .design {
-  background-image: url(../img/design-bg.png),
-    linear-gradient(rgba($white, 0.85), rgba($white, 0.85));
+  background-image: url(../img/design-bg.png), $white-overlay;
   background-blend-mode: overlay;
   background-size: cover;
   background-repeat: no-repeat;

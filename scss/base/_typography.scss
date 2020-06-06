@@ -14,16 +14,17 @@ a {
 p {
   font-family: $secondary-font;
   color: $gray-200;
-  font-size:.94rem;
+  font-size: 0.94rem;
 }
 
-h3{
-  font-size:.875rem;
+h3 {
+  font-size: 0.875rem;
 }
 
 h1::after,
 .section-header::after,
-.slide-footer::after {
+.slide-footer::after,
+.client-role::after {
   content: "";
   display: block;
   position: absolute;
@@ -33,19 +34,23 @@ h1::after,
   background-color: $primary;
 }
 h1::after {
-  background-color:$white;
+  background-color: $white;
   bottom: -0.25em;
 }
 .section-header::after {
   bottom: -1em;
 }
-.slide-footer::after{
-  display:none;
-   @include media-breakpoint-up(sm) {
-     display:block;
-left:0;
-top: calc(50% - 1px);
-   }
+.client-role::after {
+  left: 0;
+  bottom: -1rem;
+}
+.slide-footer::after {
+  display: none;
+  @include media-breakpoint-up(sm) {
+    display: block;
+    left: 0;
+    top: calc(50% - 1px);
+  }
 }
 
 .section-header {
@@ -56,8 +61,8 @@ top: calc(50% - 1px);
   position: relative;
 }
 
-section .decorative, .slide-footer .decorative {
+section .decorative,
+.slide-footer .decorative {
   font-size: 1.5rem;
-  color:$dark;
+  color: $dark;
 }
-

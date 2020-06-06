@@ -3,6 +3,7 @@ $gradient: linear-gradient(
   rgba(252, 227, 138, 0.9) 0%,
   rgba(243, 129, 129, 0.9) 100%
 );
+$white-overlay: linear-gradient(rgba($white, 0.85), rgba($white, 0.85));
 
 //fonts
 $decorative-font: "Kaushan Script", cursive;
