@@ -21,8 +21,16 @@ h3 {
   font-size: 0.875rem;
 }
 
+input::placeholder {
+  font-style: italic;
+  font-family: $secondary-font;
+  color: $gray-400;
+  font-size: 0.9375rem;
+}
+
 h1::after,
 .section-header::after,
+.map-p:after,
 .slide-footer::after,
 .client-role::after {
   content: "";
@@ -37,7 +45,8 @@ h1::after {
   background-color: $white;
   bottom: -0.25em;
 }
-.section-header::after {
+.section-header::after,
+.map-p:after {
   bottom: -1em;
 }
 .client-role::after {

@@ -1,0 +1,16 @@
+.map {
+  background-image: url(../img/map-bg.png), $white-overlay;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 60px 15px;
+
+  &-p {
+    padding-top: 1em;
+    font-size: 1.5;
+    line-height: 200%;
+    font-weight: 700;
+    position: relative;
+  }
+}

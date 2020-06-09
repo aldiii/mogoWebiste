@@ -1387,7 +1387,7 @@ pre {
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid #cccccc;
   border-radius: 0;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
@@ -2536,7 +2536,7 @@ input[type="button"].btn-block {
   text-align: center;
   white-space: nowrap;
   background-color: #999999;
-  border: 1px solid #ced4da; }
+  border: 1px solid #cccccc; }
   .input-group-text input[type="radio"],
   .input-group-text input[type="checkbox"] {
     margin-top: 0; }
@@ -2692,7 +2692,7 @@ input[type="button"].btn-block {
   color: #495057;
   vertical-align: middle;
   background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23333333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
-  border: 1px solid #ced4da;
+  border: 1px solid #cccccc;
   border-radius: 0;
   appearance: none; }
   .custom-select:focus {
@@ -2766,7 +2766,7 @@ input[type="button"].btn-block {
   line-height: 1.5;
   color: #495057;
   background-color: #fff;
-  border: 1px solid #ced4da; }
+  border: 1px solid #cccccc; }
   .custom-file-label::after {
     position: absolute;
     top: 0;
@@ -6956,8 +6956,15 @@ p {
 h3 {
   font-size: 0.875rem; }
 
+input::placeholder {
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+  color: #cccccc;
+  font-size: 0.9375rem; }
+
 h1::after,
 .section-header::after,
+.map-p:after,
 .slide-footer::after,
 .client-role::after {
   content: "";
@@ -6972,7 +6979,8 @@ h1::after {
   background-color: #fff;
   bottom: -0.25em; }
 
-.section-header::after {
+.section-header::after,
+.map-p:after {
   bottom: -1em; }
 
 .client-role::after {
@@ -7175,9 +7183,11 @@ section {
   text-align: center; }
 
 .section-p {
-  width: 80%;
   margin: 0 auto;
   padding-bottom: 5vh; }
+  @media (min-width: 768px) {
+    .section-p {
+      width: 80%; } }
 
 .facts {
   background-color: #95e1d3; }
@@ -7326,3 +7336,77 @@ section {
     padding-left: 6px;
     padding-right: 10px;
     font-size: 0.9375rem; }
+
+.map {
+  background-image: url(../img/map-bg.png), linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85));
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 60px 15px; }
+  .map-p {
+    padding-top: 1em;
+    font-size: 1.5;
+    line-height: 200%;
+    font-weight: 700;
+    position: relative; }
+
+.footer {
+  padding-top: 80px; }
+  .footer-row {
+    flex-direction: column; }
+    @media (min-width: 768px) {
+      .footer-row {
+        flex-direction: row; } }
+  .footer-title, .footer-logo {
+    margin-bottom: 40px; }
+  .footer-logo {
+    width: 131px; }
+  @media (min-width: 768px) {
+    .footer-col-40 {
+      width: 40%; }
+    .footer-col-35 {
+      width: 35%; }
+    .footer-col-25 {
+      width: 25%; } }
+  .footer-follow {
+    border-top: 1px solid #cccccc;
+    padding-top: 1rem; }
+  .footer-p span {
+    font-weight: 500;
+    font-size: 1.124rem;
+    color: #333333; }
+  .footer-input {
+    border: 1px solid #cccccc; }
+  .footer-blog {
+    margin-bottom: 36px;
+    align-items: center; }
+    @media (min-width: 768px) {
+      .footer-blog-img {
+        width: 40%;
+        min-width: 35%; } }
+    .footer-blog-text {
+      margin-left: 20px; }
+    .footer-blog-title {
+      font-size: 0.75rem; }
+    .footer-blog-p {
+      padding-bottom: 8px;
+      font-size: 0.8125rem;
+      margin: 0; }
+  .footer-instagram-col {
+    padding: 0 0 1px 1px; }
+  .footer-instagram-row {
+    max-width: 269px; }
+  .footer-instagram-p {
+    margin-top: 20px; }
+  .footer-copyright {
+    border-top: 1px solid #cccccc;
+    color: #333333;
+    font-family: "Montserrat", sans-serif;
+    padding: 1.5rem 0;
+    margin-bottom: 0;
+    transition: 0.2s; }
+    .footer-copyright a {
+      color: #f38181; }
+      .footer-copyright a:hover {
+        text-decoration: underline; }
