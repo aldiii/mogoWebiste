@@ -19,7 +19,7 @@
     <title>Mogo Webiste</title>
   </head>
   <body>
-    <header class="container-fluid header max-with">
+    <header class="container-fluid header max-width">
       <nav
         class="main-nav navbar navbar-expand-md navbar-dark bg-transparent container"
       >
@@ -58,16 +58,73 @@
           </div>
         </div>
       </nav>
-      <div class="hero container text-center">
-        <p class="decorative display-3">Creative Template</p>
-        <h1 class="display-1 text-uppercase">Welcome to MoGo</h1>
-        <button
-          class="btn btn-outline-light text-uppercase font-weight-bold outline-btn"
-        >
-          Learn more
-        </button>
+      <div class="container">
+      <div id="carouselHero" class="carousel slide hero-carousel" data-ride="carousel">
+        <ol class="carousel-indicators hero-carousel-indicators">
+          <li class="hero-carousel-indicator active" data-target="#carouselExampleIndicators" data-slide-to="0">
+            <p class="hero-carousel-caption text-uppercase"><span>01</span> Intro</p>
+          </li>
+          <li class="hero-carousel-indicator"  data-target="#carouselExampleIndicators" data-slide-to="1">
+            <p class="hero-carousel-caption text-uppercase"><span>02</span> Work</p>
+          </li>
+          <li class="hero-carousel-indicator" data-target="#carouselExampleIndicators" data-slide-to="2">
+            <p class="hero-carousel-caption text-uppercase"><span>03</span> About</p>
+          </li>
+          <li class="hero-carousel-indicator" data-target="#carouselExampleIndicators" data-slide-to="3">
+            <p class="hero-carousel-caption text-uppercase"><span>04</span> Contacts</p>
+          </li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="hero container text-center">
+              <p class="decorative display-3">Creative Template</p>
+              <h1 class="display-1 text-uppercase">Welcome to MoGo</h1>
+              <button
+                class="btn btn-outline-light text-uppercase font-weight-bold outline-btn"
+              >
+                Learn more
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="hero container text-center">
+              <p class="decorative display-3">Creative Template</p>
+              <h1 class="display-1 text-uppercase">Welcome to MoGo</h1>
+              <button
+                class="btn btn-outline-light text-uppercase font-weight-bold outline-btn"
+              >
+                Learn more
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="hero container text-center">
+              <p class="decorative display-3">Creative Template</p>
+              <h1 class="display-1 text-uppercase">Welcome to MoGo</h1>
+              <button
+                class="btn btn-outline-light text-uppercase font-weight-bold outline-btn"
+              >
+                Learn more
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="hero container text-center">
+              <p class="decorative display-3">Creative Template</p>
+              <h1 class="display-1 text-uppercase">Welcome to MoGo</h1>
+              <button
+                class="btn btn-outline-light text-uppercase font-weight-bold outline-btn"
+              >
+                Learn more
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
     </header>
+
+
     <section class="about-us" id="about-us">
       <div class="container about-us-container">
         <p class="decorative">What we do</p>
@@ -681,7 +738,7 @@
   </aside>
   <footer class="footer container">
     <div class="d-flex footer-row">
-      <div class="footer-col-40 footer-col pr-5">
+      <div class="footer-col-40 footer-col pr-md-5">
         <img src="./img/mogo-g.svg" alt="Logo Mogo" class="footer-logo">
         <p class="footer-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 
@@ -703,15 +760,15 @@
             <a href="https://www.tumblr.com/" class="link footer-link ml-3"><img src="./img/tumblr.svg" alt="tumblr"></a>
           </div>
         </div>
-        <div class="input-group my-3">
+        <div class="input-group footer-input-group my-3">
           <input type="email" name="email" id="email" class="pl-2 footer-input" placeholder="your email">
           <div class="input-group-append">
-            <button class="btn btn-secondary text-light text-uppercase px-4 ">Subscribe</button>
+            <button class="btn btn-secondary text-light text-uppercase px-2 px-md-4 footer-btn ">Subscribe</button>
           </div>
         </div>
       </div>
 
-      <div class="footer-col-35 footer-col pr-4">
+      <div class="footer-col-35 footer-col pr-sm-4">
         <h3 class="footer-title text-uppercase">blogs</h3>
         <div class="footer-blog d-flex">
           <div class="footer-blog-img"><img src="./img/footer-blog-1.png" alt="" class="img-fluid">
@@ -747,24 +804,24 @@ incididunt ut labore
           </div>
         </div>
       </div>
-      <div class="footer-col-25 footer-col pl-4">
+      <div class="footer-col-25 footer-col pl-sm-4">
         <h3 class="footer-title text-uppercase">
           instagram
         </h3>
         <div class="row footer-instagram-row no-gutters">
-          <div class="footer-instagram-col"><img src="./img/insta-1.png" class="img-fluid" alt=""></div>
-          <div class="footer-instagram-col"><img src="./img/insta-2.png" class="img-fluid" alt=""></div>
-          <div class="footer-instagram-col"><img src="./img/insta-3.png" class="img-fluid" alt=""></div>
+          <div class="footer-instagram-col col"><img src="./img/insta-1.png" class="img-fluid" alt=""></div>
+          <div class="footer-instagram-col col"><img src="./img/insta-2.png" class="img-fluid" alt=""></div>
+          <div class="footer-instagram-col col"><img src="./img/insta-3.png" class="img-fluid" alt=""></div>
         </div>
         <div class="row footer-instagram-row no-gutters">
-          <div class="footer-instagram-col"><img src="./img/insta-4.png" class="img-fluid" alt=""></div>
-          <div class="footer-instagram-col"><img src="./img/insta-5.png" class="img-fluid" alt=""></div>
-          <div class="footer-instagram-col"><img src="./img/insta-6.png" class="img-fluid" alt=""></div>
+          <div class="footer-instagram-col col"><img src="./img/insta-4.png" class="img-fluid" alt=""></div>
+          <div class="footer-instagram-col col"><img src="./img/insta-5.png" class="img-fluid" alt=""></div>
+          <div class="footer-instagram-col col"><img src="./img/insta-6.png" class="img-fluid" alt=""></div>
         </div>
         <div class="row footer-instagram-row no-gutters">
-          <div class="footer-instagram-col"><img src="./img/insta-7.png" class="img-fluid" alt=""></div>
-          <div class="footer-instagram-col"><img src="./img/insta-8.png" class="img-fluid" alt=""></div>
-          <div class="footer-instagram-col"><img src="./img/insta-9.png" class="img-fluid" alt=""></div>
+          <div class="footer-instagram-col col"><img src="./img/insta-7.png" class="img-fluid" alt=""></div>
+          <div class="footer-instagram-col col"><img src="./img/insta-8.png" class="img-fluid" alt=""></div>
+          <div class="footer-instagram-col col"><img src="./img/insta-9.png" class="img-fluid" alt=""></div>
         </div>
         <p class="font-italic footer-instagram-p">View more photos</p>
       </div>

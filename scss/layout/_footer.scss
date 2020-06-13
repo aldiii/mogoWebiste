@@ -41,6 +41,7 @@
   }
   &-input {
     border: 1px solid $gray-400;
+    max-width: 55%;
   }
   &-blog {
     margin-bottom: 36px;
@@ -64,9 +65,19 @@
     }
   }
 
+  &-btn {
+    font-size: 0.875rem;
+    font-family: $main-font;
+    font-weight: 700px;
+  }
+
+  &-input-group {
+    flex-wrap: nowrap;
+  }
+
   &-instagram {
     &-col {
-      padding: 0 0 1px 1px;
+      border: solid 1px $white;
     }
     &-row {
       max-width: 269px;

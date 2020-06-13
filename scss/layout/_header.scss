@@ -4,11 +4,9 @@
   background-position: center, center;
   background-repeat: no-repeat;
   color: $white;
-  height: 100vh;
+  min-height: 100vh;
 
   .hero {
-    height: 80%;
-    padding: 5vmax 10vmax;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -17,7 +15,7 @@
     h1 {
       position: relative;
       margin-bottom: 0.7em;
-      color:$white;
+      color: $white;
     }
     .outline-btn {
       border-width: $border-width;
@@ -26,8 +24,70 @@
         color: $primary;
       }
     }
-    & p.decorative{
-      color:$white;
+    & p.decorative {
+      color: $white;
     }
+
+    &-carousel {
+      position: static;
+      min-height: 75vh;
+      margin-top: auto;
+
+      &-caption {
+        color: $white;
+        padding-top: 1rem;
+        font-family: $main-font;
+        font-weight: 700;
+        display: none;
+        @include media-breakpoint-up(sm) {
+          display: block;
+        }
+
+        & span {
+          font-size: 1.125rem;
+          margin-right: 5px;
+        }
+      }
+      &-indicators {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 15px;
+        max-width: 1220px;
+        bottom: 50px;
+      }
+      &-indicator {
+        width: 22%;
+        height: 3px;
+        position: relative;
+        text-indent: 0;
+        &:not(:last-child) {
+          margin-right: 3%;
+        }
+        &.active::after {
+          animation: slide-loading;
+          animation-duration: 5s;
+          animation-fill-mode: forwards;
+        }
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: $primary;
+          width: 0;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@keyframes slide-loading {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
   }
 }

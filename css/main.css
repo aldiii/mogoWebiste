@@ -321,7 +321,7 @@ h6, .h6 {
   font-weight: 300; }
 
 .display-1 {
-  font-size: min(16vmin,150px);
+  font-size: min(14vmin,150px);
   font-weight: 700;
   line-height: 1.2; }
 
@@ -7157,10 +7157,8 @@ section .decorative,
   background-position: center, center;
   background-repeat: no-repeat;
   color: #fff;
-  height: 100vh; }
+  min-height: 100vh; }
   .header .hero {
-    height: 80%;
-    padding: 5vmax 10vmax;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -7176,6 +7174,54 @@ section .decorative,
         color: #f38181; }
     .header .hero p.decorative {
       color: #fff; }
+    .header .hero-carousel {
+      position: static;
+      min-height: 75vh;
+      margin-top: auto; }
+      .header .hero-carousel-caption {
+        color: #fff;
+        padding-top: 1rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        display: none; }
+        @media (min-width: 576px) {
+          .header .hero-carousel-caption {
+            display: block; } }
+        .header .hero-carousel-caption span {
+          font-size: 1.125rem;
+          margin-right: 5px; }
+      .header .hero-carousel-indicators {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 15px;
+        max-width: 1220px;
+        bottom: 50px; }
+      .header .hero-carousel-indicator {
+        width: 22%;
+        height: 3px;
+        position: relative;
+        text-indent: 0; }
+        .header .hero-carousel-indicator:not(:last-child) {
+          margin-right: 3%; }
+        .header .hero-carousel-indicator.active::after {
+          animation: slide-loading;
+          animation-duration: 5s;
+          animation-fill-mode: forwards; }
+        .header .hero-carousel-indicator::after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: #f38181;
+          width: 0;
+          height: 100%; }
+
+@keyframes slide-loading {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
 
 section {
   padding-top: 100px;
@@ -7377,7 +7423,8 @@ section {
     font-size: 1.124rem;
     color: #333333; }
   .footer-input {
-    border: 1px solid #cccccc; }
+    border: 1px solid #cccccc;
+    max-width: 55%; }
   .footer-blog {
     margin-bottom: 36px;
     align-items: center; }
@@ -7393,8 +7440,14 @@ section {
       padding-bottom: 8px;
       font-size: 0.8125rem;
       margin: 0; }
+  .footer-btn {
+    font-size: 0.875rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700px; }
+  .footer-input-group {
+    flex-wrap: nowrap; }
   .footer-instagram-col {
-    padding: 0 0 1px 1px; }
+    border: solid 1px #fff; }
   .footer-instagram-row {
     max-width: 269px; }
   .footer-instagram-p {
