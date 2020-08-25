@@ -7128,19 +7128,19 @@ section .decorative,
     .section-card-btn.btn:hover {
       background-color: #f38181; }
     .section-card-btn-fb {
-      background-image: url("../img/facebook.svg"); }
+      background-image: url("../img/facebook-pink.svg"); }
       .section-card-btn-fb:hover {
         background-image: url("../img/facebook-white.svg"); }
     .section-card-btn-tw {
-      background-image: url("../img/twitter.svg"); }
+      background-image: url("../img/twitter-pink.svg"); }
       .section-card-btn-tw:hover {
         background-image: url("../img/twitter-white.svg"); }
     .section-card-btn-pin {
-      background-image: url("../img/pinterest.svg"); }
+      background-image: url("../img/pinterest-pink.svg"); }
       .section-card-btn-pin:hover {
         background-image: url("../img/pinterest-white.svg"); }
     .section-card-btn-ig {
-      background-image: url("../img/instagram.svg"); }
+      background-image: url("../img/instagram-pink.svg"); }
       .section-card-btn-ig:hover {
         background-image: url("../img/instagram-white.svg"); }
 
@@ -7175,9 +7175,7 @@ section .decorative,
     .header .hero p.decorative {
       color: #fff; }
     .header .hero-carousel {
-      position: static;
-      min-height: 75vh;
-      margin-top: auto; }
+      min-height: 85vh; }
       .header .hero-carousel-caption {
         color: #fff;
         padding-top: 1rem;
@@ -7194,8 +7192,7 @@ section .decorative,
         margin-left: auto;
         margin-right: auto;
         padding: 0 15px;
-        max-width: 1220px;
-        bottom: 50px; }
+        max-width: 1220px; }
       .header .hero-carousel-indicator {
         width: 22%;
         height: 3px;
@@ -7408,16 +7405,27 @@ section {
     margin-bottom: 40px; }
   .footer-logo {
     width: 131px; }
-  @media (min-width: 768px) {
-    .footer-col-40 {
-      width: 40%; }
-    .footer-col-35 {
-      width: 35%; }
-    .footer-col-25 {
-      width: 25%; } }
+  .footer-col {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px; }
+    @media (min-width: 768px) {
+      .footer-col {
+        text-align: left;
+        justify-content: flex-start; }
+        .footer-col-40 {
+          width: 40%; }
+        .footer-col-35 {
+          width: 35%; }
+        .footer-col-25 {
+          width: 25%; } }
   .footer-follow {
     border-top: 1px solid #cccccc;
-    padding-top: 1rem; }
+    padding-top: 1rem;
+    justify-content: center; }
+    @media (min-width: 768px) {
+      .footer-follow {
+        justify-content: flex-start; } }
   .footer-p span {
     font-weight: 500;
     font-size: 1.124rem;
@@ -7445,7 +7453,11 @@ section {
     font-family: "Montserrat", sans-serif;
     font-weight: 700px; }
   .footer-input-group {
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+    justify-content: center; }
+    @media (min-width: 768px) {
+      .footer-input-group {
+        justify-content: flex-start; } }
   .footer-instagram-col {
     border: solid 1px #fff; }
   .footer-instagram-row {

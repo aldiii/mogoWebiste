@@ -1,7 +1,7 @@
 .section-card {
   transition: 0.3s;
   margin-bottom: 20px;
-  border:none;
+  border: none;
 
   &-shadow:hover {
     transform: translate(-10px, -10px);
@@ -37,26 +37,26 @@
     }
 
     &-fb {
-      background-image: url("../img/facebook.svg");
+      background-image: url("../img/facebook-pink.svg");
 
       &:hover {
         background-image: url("../img/facebook-white.svg");
       }
     }
     &-tw {
-      background-image: url("../img/twitter.svg");
+      background-image: url("../img/twitter-pink.svg");
       &:hover {
         background-image: url("../img/twitter-white.svg");
       }
     }
     &-pin {
-      background-image: url("../img/pinterest.svg");
+      background-image: url("../img/pinterest-pink.svg");
       &:hover {
         background-image: url("../img/pinterest-white.svg");
       }
     }
     &-ig {
-      background-image: url("../img/instagram.svg");
+      background-image: url("../img/instagram-pink.svg");
       &:hover {
         background-image: url("../img/instagram-white.svg");
       }

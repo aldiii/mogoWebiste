@@ -29,9 +29,7 @@
     }
 
     &-carousel {
-      position: static;
-      min-height: 75vh;
-      margin-top: auto;
+      min-height: 85vh;
 
       &-caption {
         color: $white;
@@ -53,7 +51,6 @@
         margin-right: auto;
         padding: 0 15px;
         max-width: 1220px;
-        bottom: 50px;
       }
       &-indicator {
         width: 22%;

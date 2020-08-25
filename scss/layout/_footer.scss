@@ -16,7 +16,12 @@
     width: 131px;
   }
   &-col {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
     @include media-breakpoint-up(md) {
+      text-align: left;
+      justify-content: flex-start;
       &-40 {
         width: 40%;
       }
@@ -31,6 +36,10 @@
   &-follow {
     border-top: 1px solid $gray-400;
     padding-top: 1rem;
+    justify-content: center;
+    @include media-breakpoint-up(md) {
+      justify-content: flex-start;
+    }
   }
   &-p {
     & span {
@@ -73,6 +82,11 @@
 
   &-input-group {
     flex-wrap: nowrap;
+    justify-content: center;
+
+    @include media-breakpoint-up(md) {
+      justify-content: flex-start;
+    }
   }
 
   &-instagram {
