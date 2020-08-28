@@ -1,4 +1,7 @@
 .main-nav {
+  background-color: transparent;
+  transform: translate 0.2 ease-in-out;
+
   &,
   &-collapse {
     align-items: center;
@@ -27,7 +30,27 @@
       color: $success;
     }
   }
+  &.primary {
+    background-color: $primary;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    animation: falling 0.3s;
+  }
 }
 .navbar-nav {
   align-items: center;
+}
+
+@keyframes falling {
+  from {
+    opacity: 0;
+    transform: translateY(-80%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

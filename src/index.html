@@ -18,8 +18,9 @@
   <body>
     <header class="container-fluid header max-width">
       <nav
-        class="main-nav navbar navbar-expand-md navbar-dark bg-transparent container"
+        class="main-nav navbar navbar-expand-md  navbar-dark transparent" id="header-nav"
       >
+        <div class="container">
         <a class="navbar-brand" href="#"
           ><img src=<%=require("./img/mogo.svg").default%> alt="Mogo logo"
         /></a>
@@ -38,7 +39,7 @@
           class="main-nav-collapse collapse navbar-collapse"
           id="navbarNavAltMarkup"
         >
-          <div class="navbar-nav ml-auto">
+          <div class="navbar-nav ml-auto" >
             <a class="nav-item nav-link active main-nav-link" href="#about-us"
               >About <span class="sr-only">(current)</span></a
             >
@@ -53,6 +54,7 @@
               ><img src=<%=require("./img/search-icon.svg").default%> alt="search"
             /></a>
           </div>
+        </div>
         </div>
       </nav>
       <div class="container">
@@ -121,7 +123,7 @@
     </div>
     </header>
 
-
+    <main >
     <section class="about-us" id="about-us">
       <div class="container about-us-container">
         <p class="decorative">What we do</p>
@@ -733,6 +735,7 @@
     <img src=<%=require("./img/pin.svg").default%> alt="">
     <p class="map-p text-uppercase text-primary">Open map</p>
   </aside>
+</main>
   <footer class="footer container">
     <div class="d-flex footer-row">
       <div class="footer-col-40 footer-col pr-md-5">
