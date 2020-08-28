@@ -5,16 +5,30 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass -w scss -o css"
+    "scss": "node-sass -w scss -o css",
+    "build": "webpack",
+    "start": "webpack-dev-server"
   },
   "author": "Aldona Tomzik",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.5.0",
     "jquery": "^3.5.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "webpack-dev-server": "^3.11.0"
   },
   "devDependencies": {
-    "node-sass": "^4.14.1"
+    "autoprefixer": "^9.8.6",
+    "css-loader": "^4.2.2",
+    "exports-loader": "^1.1.0",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "image-webpack-loader": "^6.0.0",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^10.0.1",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
   }
 }
