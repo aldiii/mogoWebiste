@@ -1,4 +1,14 @@
 .logos {
   background-color: $gray-300;
   padding: 70px 0;
+  &.col {
+    text-align: center;
+  }
+
+  &-img {
+    transition: 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 }

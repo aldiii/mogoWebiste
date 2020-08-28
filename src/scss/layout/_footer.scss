@@ -88,6 +88,12 @@
       justify-content: flex-start;
     }
   }
+  &-icons &-link img {
+    transition: 0.2s ease-in-out;
+  }
+  &-icons &-link:hover img {
+    transform: scale(1.3);
+  }
 
   &-instagram {
     &-col {
@@ -96,8 +102,11 @@
     &-row {
       max-width: 269px;
     }
-    &-p {
-      margin-top: 20px;
+    &-a {
+      font-family: roboto;
+      margin-top: 30px;
+      font-size: 12px;
+      transition: 0.2s;
     }
   }
   &-copyright {
