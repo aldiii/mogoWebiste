@@ -1,0 +1,13 @@
+.btn-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+  & img {
+    margin-top: -10px;
+  }
+}
